@@ -202,8 +202,8 @@ Stripe Styles
   position: fixed;
   height: 5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: left;
   background: var(--clr-white);
   width: 100%;
   z-index: 1;
@@ -216,7 +216,7 @@ Stripe Styles
 .nav-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
 }
 .btn {
   font-size: 1rem;

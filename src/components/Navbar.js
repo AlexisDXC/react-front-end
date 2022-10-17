@@ -50,9 +50,11 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
+        <ul className='nav-links'>
         <Link to='testregister'>
           <button className='btn signin-btn'>Sign in</button>
         </Link>
+        </ul>
        
       </div>
       <Divider />

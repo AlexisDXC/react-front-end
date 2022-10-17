@@ -7,19 +7,24 @@ import Navbardiv from '../components/Navbardiv';
 import NavLinks from '../components/NavLinks'
 import SmallSidebar from '../components/SmallSidebar'
 import { FaHome } from 'react-icons/fa';
+import BigSidebar from '../components/BigSidebar';
+// import Wrapper from '../assets/wrappers/SmallSidebar';
+import Wrapper from '../assets/wrappers/BigSidebar';
 
 const Dashboard  = () => {
     return (
      
       <Wrapper>
+        <BigSidebar />
 
 <SmallSidebar /> 
-< FaHome  />
+
     
 </Wrapper>
   );
 };
 
+{/*
 const Wrapper = styled.section`
 position: absolute;
 min-height: 60vh;
@@ -42,6 +47,6 @@ top: 80px;
       width: 90%;
     }
   }
-`
+`*/}
 
 export default Dashboard

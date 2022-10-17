@@ -1,43 +1,6 @@
-import React from 'react';
 import styled from 'styled-components'
-//import Wrapper from '../assets/wrappers/SmallSidebar';
-import { FaTimes } from 'react-icons/fa';
-import Logo from './Logo';
-import { NavLink } from 'react-router-dom';
-//import logo from '../assets/images/logo.svg';
 
-const SmallSidebar  = () => {
-    return (
-      <Wrapper>
-
-                <h2>test</h2>
-      <div
-        className='' 
-      >
-        <div className=''>
-
-          <button className='' >
-            <h2>test</h2>
-            <FaTimes />
-          </button>
-          <header>
-            <Logo />
-          </header>
-          <h2>test2</h2>
-          <div className='nav-links'>nav links</div>
- 
-        </div>
-      </div>
-    </Wrapper>
-
-  );
-};
-
-const Wrapper = styled.section`
-position: fixed;
-min-height: 60vh;
-place-items: left;
-top: 100px;
+const Wrapper = styled.aside`
   @media (min-width: 992px) {
     display: none;
   }
@@ -51,7 +14,6 @@ top: 100px;
     z-index: -1;
     opacity: 0;
     transition: var(--transition);
-    
   }
   .show-sidebar {
     z-index: 99;
@@ -67,11 +29,10 @@ top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    top: 200px;
   }
   .close-btn {
     position: absolute;
-    top: 400px;
+    top: 10px;
     left: 10px;
     background: transparent;
     border-color: transparent;
@@ -112,5 +73,4 @@ top: 100px;
     color: var(--primary-500);
   }
 `
-
-export default SmallSidebar
+export default Wrapper
