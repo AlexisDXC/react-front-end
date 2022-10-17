@@ -17,7 +17,7 @@ const Submenu = () => {
     submenu.style.top = `${bottom}px`
     console.log(links)
     if (links.length === 3) {
-      setColumns('col-1')
+      setColumns('col-3')
     }
     if (links.length > 3) {
       setColumns('col-4')

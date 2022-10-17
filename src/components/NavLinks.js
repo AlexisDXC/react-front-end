@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 
 const NavLinks = ({ toggleSidebar }) => {
   return (
-    <div className='nav-links'>
+    <div className='nav-links2'>
       {links.map((link) => {
         const { text, path, id, icon } = link;
         return (

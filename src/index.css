@@ -217,6 +217,17 @@ Stripe Styles
   display: flex;
   justify-content: space-between;
   align-items: left;
+  width: 30vw;
+  max-width: var(--max-width);
+}
+.nav-right {
+  background-color: #efefef;
+  color: #000;
+
+ 
+  float: right;
+
+
 }
 .btn {
   font-size: 1rem;
@@ -299,6 +310,24 @@ Stripe Styles
     height: 100%;
     display: grid;
     align-items: center;
+
+  }
+  .nav-links-menu {
+    display: block;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    width: 80vw;
+    max-width: var(--max-width);
+  }
+  .nav-sign {
+    width: 50vw;
+    max-width: var(--max-width);
+    align-items: right;
   }
   .nav-links li {
     height: 100%;

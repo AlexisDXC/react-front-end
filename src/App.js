@@ -21,11 +21,9 @@ function App() {
       <Submenu />  
       <Routes>
         <Route path='/' element={<Home/>} />
-       <Route path='testregister' element={<TestRegister />} />   
-       <Route path='dashboard' element={<Dashboard />} 
-       
-       />   
-       <Route path='upload' element={<Upload />} />   
+        <Route path='testregister' element={<TestRegister />} />   
+        <Route path='dashboard' element={<Dashboard />} />   
+        <Route path='upload' element={<Upload />} />   
         <Route path='*' element={<Home/>} />
  
       </Routes>

@@ -18,9 +18,11 @@ const AppProvider = ({ children }) => {
     setPage(page);
     setLocation(coordinates);
     setIsSubmenuOpen(true);
+    console.log('abrir')
   };
   const closeSubmenu = () => {
     setIsSubmenuOpen(false);
+    console.log('cerrar')
   };
 
   return (

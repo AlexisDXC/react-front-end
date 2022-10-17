@@ -21,9 +21,11 @@ const Navbar = () => {
     if (!e.target.classList.contains('link-btn')) {
       closeSubmenu();
     }
+    console.log('no cerrar')
+    
   };
   return (
-    <><nav className='nav' onMouseOver={handleSubmenu}>
+    <nav className='nav' onMouseOver={handleSubmenu}>
       <div className='nav-center'>
         <div className='nav-header'>
           <Link to='/'>
@@ -33,6 +35,7 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
+        <div className='nav-links'>
         <ul className='nav-links'>
           <li>
             <button className='link-btn' onMouseOver={displaySubmenu}>
@@ -50,15 +53,18 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
+        </div>
+        <div className='nav-links-menu'>
+          <div></div>
         <ul className='nav-links'>
         <Link to='testregister'>
           <button className='btn signin-btn'>Sign in</button>
         </Link>
         </ul>
-       
+       </div >
       </div>
-      <Divider />
-    </nav><Divider /></>
+
+    </nav>
   );
 };
 
