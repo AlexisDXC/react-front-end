@@ -71,8 +71,7 @@ const Upload = () => {
   };
 
   return (
-    <Wrapper3>
-
+    <Wrapper className='full-page'>
 
           <div className="container">
             <div className="card">
@@ -80,16 +79,16 @@ const Upload = () => {
 
               <div className="card-body">
 
-                <form className='form4' onSubmit={onSubmit}>
+                <form className='form7' onSubmit={onSubmit}>
 
                   <div>
                     <p>Upload File</p>
                     <table id="myTable" class="display wrap" >
                       <tr>
+                        
                         <td><input type="file" onChange={(e) => { const file = e.target.files[0]; readExcel(file); }} /> </td>
                         <td className="th" ><input type='radio' name='group' ng-model='mValue' value='first' /> Infor</td>
                         <td className="th" > <input className="th" type='radio' name='group' ng-model='mValue' value='second' /> ESRI </td>
-                        <p> Generate GISOBJID</p>
                         <td className="th" ><input className="th" type='radio' name='group' ng-model='mValue' value='second' /> AssetWise</td>
                       </tr>
                     </table>
@@ -118,6 +117,7 @@ const Upload = () => {
                     <th className="th" ><button type='submit' className='btn btn-primary'>EDIT</button> </th>
                     <th className="th"><button type='save' className='btn btn-secondary'>SAVE</button> </th>
                     <th className="th"><button type='submit' className='btn btn-success'>SUBMIT</button> </th>
+                    <th className="th"><button type='submit' className='btn btn-success'>Get GISOBJID</button> </th>
  
 
                       </ tr>
@@ -150,18 +150,22 @@ const Upload = () => {
                     </thead>
                     <tbody>
 
+         
                       {items.map((d) => (
+  
+                    
                         <tr key={d.Id}>
-                          <th>{d.Asset}</th>
-                          <th>{d.CommissionDate}</th>
-                          <td>{d.Department}</td>
-                          <td>{d.Description}</td>
+                          <td>{d.Asset}</td>
+                          <td>{d.CommissionDate}</td>
+                          <td className='td-color'>{d.Department}</td>
+                          <td><input type="text" value={d.Description} /></td>
                           <td>{d.Organization}</td>
                           <td>{d.State}</td>
                           <td>{d.Status}</td>
                           <td>{d.Type}</td>
                         </tr>
                       ))}
+                   
 
                     </tbody>
                   </table>
@@ -171,7 +175,7 @@ const Upload = () => {
           </div>
 
 
-    </Wrapper3>
+    </Wrapper>
   );
 }
 
@@ -240,5 +244,6 @@ const Wrapper3 = styled.section`
     }
   }
 `
+
 
 export default Upload

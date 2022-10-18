@@ -525,7 +525,7 @@ Stripe Styles
 /* form */
 
 .form {
-  width: 90vw;
+  width: 100vw;
   max-width: var(--fixed-width);
   background: var(--white);
   border-radius: var(--borderRadius);
@@ -602,6 +602,15 @@ Stripe Styles
 
 }
 .form4 {
+  max-width: var(--fixed-width4);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+  transition: var(--transition);
+}
+.form7 {
 
   max-width: var(--fixed-width4);
   background: var(--white);
@@ -610,9 +619,15 @@ Stripe Styles
   padding: 2rem 2.5rem;
   margin: 3rem auto;
   transition: var(--transition);
-
 }
+
 
 .nav-logo{
  height: 70px;
 }
+
+.td-color{
+  color: red;
+  }
+
+

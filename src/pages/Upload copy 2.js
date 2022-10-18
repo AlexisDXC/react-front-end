@@ -150,22 +150,18 @@ const Upload = () => {
                     </thead>
                     <tbody>
 
-         
                       {items.map((d) => (
-  
-                    
                         <tr key={d.Id}>
                           <td>{d.Asset}</td>
                           <td>{d.CommissionDate}</td>
                           <td className='td-color'>{d.Department}</td>
-                          <td><input type="text" value={d.Description} /></td>
+                          <td>{d.Description}</td>
                           <td>{d.Organization}</td>
                           <td>{d.State}</td>
                           <td>{d.Status}</td>
                           <td>{d.Type}</td>
                         </tr>
                       ))}
-                   
 
                     </tbody>
                   </table>
